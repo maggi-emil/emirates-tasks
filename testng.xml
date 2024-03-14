@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="false">
+
+    <test name="Run all" verbose="2">
+        <packages>
+            <package name="com.emirates.tests.*"/>
+        </packages>
+    </test>
+
+</suite>
