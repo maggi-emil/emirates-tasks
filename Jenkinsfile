@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+        // Define Maven tool installation
+        maven 'MAVEN' // 'Maven' is the name given to the Maven installation in Jenkins Tools
+    }
 
     stages {
         stage('Checkout') {
