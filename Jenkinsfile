@@ -25,13 +25,12 @@ pipeline {
             }
             post {
                 always {
-                    // Generate Allure report
                     allure([
                         includeProperties: false,
                         jdk: '',
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
-                        results: [[path: 'target/surefire-reports']]
+                        results: [[path: 'target/allure-results']]
                     ])
                 }
             }
