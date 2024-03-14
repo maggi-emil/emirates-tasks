@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+                steps {
+                    // Checkout the code from the repository
+                    checkout scm
+                }
+        }
         stage('Build') {
             steps {
                 // Run mvn clean package -DskipTests
